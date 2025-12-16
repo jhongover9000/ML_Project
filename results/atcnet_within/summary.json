@@ -1,0 +1,50 @@
+{
+  "model": "atcnet",
+  "eval": "within",
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "use_all_sessions": false,
+  "preprocess": {
+    "low_cut": 4.0,
+    "high_cut": 38.0,
+    "start_offset": -0.5,
+    "stop_offset": 0.0,
+    "val_frac": 0.2,
+    "seed": 9070
+  },
+  "fbcsp": {
+    "mi_offset": null,
+    "k_best": null,
+    "csp_components": null
+  },
+  "deep": {
+    "epochs": 80,
+    "batch_size": 32,
+    "lr": 0.0005,
+    "weight_decay": 0.01,
+    "patience": 12,
+    "grad_clip": 1.0,
+    "device": "cuda"
+  },
+  "aggregate": {
+    "mean_test_acc": 0.43441355555555555,
+    "std_test_acc": 0.1573344714225159,
+    "mean_test_bal_acc": 0.43441355555555555,
+    "std_test_bal_acc": 0.1573344714225159
+  },
+  "label_ids_sorted": [
+    0,
+    1,
+    2,
+    3
+  ]
+}
